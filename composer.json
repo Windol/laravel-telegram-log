@@ -1,5 +1,5 @@
 {
-    "name": "defstudio/laravel-telegram-log",
+    "name": "windol/laravel-telegram-log",
     "version": "1.0.0",
     "description": "Telegram log channel for Laravel",
     "keywords": [
