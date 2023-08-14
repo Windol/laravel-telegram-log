@@ -7,6 +7,7 @@ namespace Defstudio\LaravelTelegramLog;
 use Defstudio\LaravelTelegramLog\Services\TelegramService;
 use Monolog\Handler\AbstractProcessingHandler;
 use Monolog\Logger;
+use Monolog\LogRecord;
 
 class TelegramLoggerHandler extends AbstractProcessingHandler
 {
@@ -33,12 +34,12 @@ class TelegramLoggerHandler extends AbstractProcessingHandler
         $this->telegram_service = new TelegramService($telegram_bot_token, $telegram_chat_id);
     }
 
-    public function write(array $record): void
+    public function write(LogRecord $record): void
     {
         $this->telegram_service->send_message($this->format_log($record));
     }
 
-    protected function format_log(array $log): string
+    protected function format_log(LogRecord $log): string
     {
 
 

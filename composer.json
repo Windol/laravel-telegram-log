@@ -59,7 +59,7 @@
                 "Defstudio\\LaravelTelegramLog\\LaravelTelegramLogServiceProvider"
             ],
             "aliases": {
-                "LaravelTelegramLog": "Defstudio\\LaravelTelegramLog\\LaravelTelegramLogFacade"
+                "LaravelTelegramLog": "Defstudio\\LaravelTelegramLog\\LaravelTelegramLog"
             }
         }
     },
